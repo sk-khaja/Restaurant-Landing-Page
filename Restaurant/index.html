@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Delight - Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Spice<span>Delight</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#ratings">Ratings</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Authentic Indian Cuisine</h1>
+            <p>Experience the rich flavors and spices of India in every bite</p>
+            <a href="#reservation" class="btn">Book a Table</a>
+            <a href="#menu" class="btn btn-outline">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <h2 class="section-title">Today's Specials</h2>
+            <div class="specials-grid">
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://www.shutterstock.com/image-photo/biryani-rice-indian-meal-chicken-260nw-2468763009.jpg" alt="Hyderabadi Biryani">
+                    </div>
+                    <div class="special-content">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Fragrant basmati rice cooked with tender meat and aromatic spices</p>
+                        <div class="price">$14.99</div>
+                        <button class="btn order-btn" data-item="Hyderabadi Biryani" data-price="14.99">Order Now</button>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2AZuqfGwaRleyr3cM7uEjWKTam-m461gL3j4qheeyPpZx90AA2EzQQGwVtoNCjm1CVVY&usqp=CAU" alt="Masala Dosa">
+                    </div>
+                    <div class="special-content">
+                        <h3>Masala Dosa</h3>
+                        <p>Crispy rice crepe stuffed with spiced potato filling, served with sambar and chutney</p>
+                        <div class="price">$9.99</div>
+                        <button class="btn order-btn" data-item="Masala Dosa" data-price="9.99">Order Now</button>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2jh7DvoLtDyDF6cigDHFrSMs5zMpaXRelA&s" alt="Butter Chicken">
+                    </div>
+                    <div class="special-content">
+                        <h3>Butter Chicken</h3>
+                        <p>Tender chicken in a rich tomato and butter sauce with aromatic spices</p>
+                        <div class="price">$12.99</div>
+                        <button class="btn order-btn" data-item="Butter Chicken" data-price="12.99">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <div class="menu-tab active" data-category="starters">Starters</div>
+                <div class="menu-tab" data-category="mains">Main Course</div>
+                <div class="menu-tab" data-category="biryani">Biryani Specials</div>
+                <div class="menu-tab" data-category="dosa">Dosa Corner</div>
+                <div class="menu-tab" data-category="tiffin">Tiffin Items</div>
+                <div class="menu-tab" data-category="salads">Salads</div>
+                <div class="menu-tab" data-category="desserts">Desserts</div>
+                <div class="menu-tab" data-category="icecream">Ice Creams</div>
+            </div>
+
+            <!-- Starters Menu -->
+            <div class="menu-category active" id="starters">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Samosa">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Vegetable Samosa (2 pcs)</h3>
+                            <p>Crispy pastry filled with spiced potatoes and peas</p>
+                            <div class="menu-item-price">$4.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Vegetable Samosa" data-price="4.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Paneer Tikka">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Paneer Tikka</h3>
+                            <p>Cubes of cottage cheese marinated in spices and grilled</p>
+                            <div class="menu-item-price">$7.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Paneer Tikka" data-price="7.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Chicken 65">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Chicken 65</h3>
+                            <p>Spicy deep-fried chicken appetizer with curry leaves</p>
+                            <div class="menu-item-price">$8.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Chicken 65" data-price="8.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course Menu -->
+            <div class="menu-category" id="mains">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Butter Chicken">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Butter Chicken</h3>
+                            <p>Tender chicken in rich tomato and butter sauce</p>
+                            <div class="menu-item-price">$12.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Butter Chicken" data-price="12.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Palak Paneer">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Palak Paneer</h3>
+                            <p>Cottage cheese cubes in creamy spinach gravy</p>
+                            <div class="menu-item-price">$11.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Palak Paneer" data-price="11.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Dal Makhani">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Dal Makhani</h3>
+                            <p>Black lentils slow cooked with butter and cream</p>
+                            <div class="menu-item-price">$10.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Dal Makhani" data-price="10.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biryani Specials Menu -->
+            <div class="menu-category" id="biryani">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hyderabadi Biryani">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Hyderabadi Biryani</h3>
+                            <p>Fragrant basmati rice with tender meat and aromatic spices</p>
+                            <div class="menu-item-price">$14.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Hyderabadi Biryani" data-price="14.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Vegetable Biryani">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Vegetable Biryani</h3>
+                            <p>Fragrant rice with mixed vegetables and spices</p>
+                            <div class="menu-item-price">$12.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Vegetable Biryani" data-price="12.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Chicken Dum Biryani">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Chicken Dum Biryani</h3>
+                            <p>Slow-cooked chicken biryani with layers of flavor</p>
+                            <div class="menu-item-price">$15.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Chicken Dum Biryani" data-price="15.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dosa Corner Menu -->
+            <div class="menu-category" id="dosa">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Masala Dosa">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Masala Dosa</h3>
+                            <p>Crispy rice crepe stuffed with spiced potato filling</p>
+                            <div class="menu-item-price">$9.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Masala Dosa" data-price="9.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Plain Dosa">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Plain Dosa</h3>
+                            <p>Classic crispy rice crepe served with sambar and chutney</p>
+                            <div class="menu-item-price">$7.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Plain Dosa" data-price="7.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Rava Dosa">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Rava Dosa</h3>
+                            <p>Crispy semolina crepe with spices and onions</p>
+                            <div class="menu-item-price">$8.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Rava Dosa" data-price="8.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tiffin Items Menu -->
+            <div class="menu-category" id="tiffin">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Idli Sambar">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Idli Sambar (2 pcs)</h3>
+                            <p>Steamed rice cakes served with lentil stew and chutney</p>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Idli Sambar" data-price="6.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Vada Sambar">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Vada Sambar (2 pcs)</h3>
+                            <p>Crispy lentil donuts served with lentil stew</p>
+                            <div class="menu-item-price">$7.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Vada Sambar" data-price="7.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pongal">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Pongal</h3>
+                            <p>Comforting rice and lentil porridge with spices</p>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Pongal" data-price="6.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salads Menu -->
+            <div class="menu-category" id="salads">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Kachumber Salad">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Kachumber Salad</h3>
+                            <p>Fresh cucumber, tomatoes, onions with lemon dressing</p>
+                            <div class="menu-item-price">$5.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Kachumber Salad" data-price="5.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Sprouts Salad">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Sprouts Salad</h3>
+                            <p>Healthy mix of sprouted lentils with veggies</p>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Sprouts Salad" data-price="6.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Fruit Chaat">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Fruit Chaat</h3>
+                            <p>Seasonal fruits with tangy chaat masala</p>
+                            <div class="menu-item-price">$7.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Fruit Chaat" data-price="7.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Menu -->
+            <div class="menu-category" id="desserts">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Gulab Jamun">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Gulab Jamun (2 pcs)</h3>
+                            <p>Soft milk dumplings in rose-flavored sugar syrup</p>
+                            <div class="menu-item-price">$5.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Gulab Jamun" data-price="5.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Rasmalai">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Rasmalai (2 pcs)</h3>
+                            <p>Cottage cheese patties in sweetened, thickened milk</p>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Rasmalai" data-price="6.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Kheer">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Kheer</h3>
+                            <p>Traditional rice pudding with nuts and cardamom</p>
+                            <div class="menu-item-price">$4.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Kheer" data-price="4.99">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Creams Menu -->
+            <div class="menu-category" id="icecream">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Mango Ice Cream">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Mango Ice Cream</h3>
+                            <p>Creamy mango flavored ice cream</p>
+                            <div class="menu-item-price">$4.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Mango Ice Cream" data-price="4.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Kulfi">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Kulfi</h3>
+                            <p>Traditional Indian frozen dessert with pistachios</p>
+                            <div class="menu-item-price">$5.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Kulfi" data-price="5.99">Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Falooda">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Falooda</h3>
+                            <p>Vermicelli, basil seeds, rose syrup with ice cream</p>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <button class="btn order-btn" data-item="Falooda" data-price="6.99">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Welcome to Spice Delight</h2>
+                    <p>Founded in 2005 by Srikanth, Spice Delight brings authentic Indian flavors to your table. Chef Chinnu, with over 25 years of culinary experience across India and abroad, envisioned a restaurant that would showcase the diverse regional cuisines of India while maintaining traditional cooking methods.</p>
+                    <p>What started as a small eatery in downtown has now grown into a renowned restaurant group with multiple locations. Our commitment to quality ingredients, traditional recipes, and warm hospitality remains unchanged.</p>
+                    <p>At Spice Delight, we believe food is more than sustenance - it's an experience that brings people together. Our chefs meticulously prepare each dish using authentic spices and techniques passed down through generations.</p>
+                    <a href="#team" class="btn">Meet Our Chefs</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <h2 class="section-title">Our Locations</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256024027!2d-73.98784492416448!3d40.75798597138973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1623256789012!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="location-info">
+                        <h3>Guntur</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Lakshmi puram,Guntur.</p>
+                        <p><i class="fas fa-phone"></i>7893944728</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 11am - 11pm</p>
+                        <p><i class="fas fa-car"></i> Valet parking available ($15 for 3 hours)</p>
+                        <a href="#reservation" class="btn">Reserve Table</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.968344592748!2d-74.01381692416557!3d40.71311647334539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2sWall%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1623256863325!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="location-info">
+                        <h3>Vijayawada</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>Vijayawada</p>
+                        <p><i class="fas fa-phone"></i>9392604717</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 11am - 10pm, Sat-Sun: 12pm - 10pm</p>
+                        <p><i class="fas fa-car"></i> Street parking and nearby garages available</p>
+                        <a href="#reservation" class="btn">Reserve Table</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2217061033103!2d-73.99699092416574!3d40.70603887374007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1623256904091!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="location-info">
+                        <h3>Vadlamudi</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>Vadlamudi,Near Vignan University</p>
+                        <p><i class="fas fa-phone"></i>7396216298</p>
+                        <p><i class="fas fa-clock"></i> Mon-Thu: 5pm - 10pm, Fri-Sun: 12pm - 11pm</p>
+                        <p><i class="fas fa-car"></i> Nearby parking garage (2 blocks away)</p>
+                        <a href="#reservation" class="btn">Reserve Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment" id="payment">
+        <div class="container">
+            <h2 class="section-title">Payment Methods</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <i class="fab fa-cc-visa"></i>
+                    <span>Visa</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-cc-amex"></i>
+                    <span>American Express</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-cc-discover"></i>
+                    <span>Discover</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-apple-pay"></i>
+                    <span>Apple Pay</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-google-pay"></i>
+                    <span>Google Pay</span>
+                </div>
+                <div class="payment-method">
+                    <i class="fab fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+            </div>
+            <div class="qr-code">
+                <h3>Scan to Pay</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://spicedelight.com/pay" alt="QR Code for Payment">
+                <p>Use any UPI app to scan and pay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <div class="reservation-form">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" class="form-control" required>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                                <option value="9">9+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Preferred Location</label>
+                        <select id="location" class="form-control" required>
+                            <option value="">Select table</option>
+                            <option value="Round Table">Round Table</option>
+                            <option value="Banquet Table">Banquet Table</option>
+                            <option value="Sofa Seating">Sofa Seating</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Book Table</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Registration Section -->
+    <section class="reservation" id="vip">
+        <div class="container">
+            <h2 class="section-title">Celebrate Your Birthday</h2>
+            <div class="reservation-form">
+                <form id="vipForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vip-name">Full Name</label>
+                            <input type="text" id="vip-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vip-email">Email</label>
+                            <input type="email" id="vip-email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vip-phone">Phone Number</label>
+                            <input type="tel" id="vip-phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vip-birthday">Birthday</label>
+                            <input type="date" id="vip-birthday" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="vip-location">Preferred Location</label>
+                        <select id="vip-location" class="form-control" required>
+                            <option value="">Select Location</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Vadlamudi">Vadlamudi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vip-interests">Food Interests (Select all that apply)</label>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px;">
+                            <label><input type="checkbox" name="vip-interests" value="North Indian"> North Indian</label>
+                            <label><input type="checkbox" name="vip-interests" value="South Indian"> South Indian</label>
+                            <label><input type="checkbox" name="vip-interests" value="Mughlai"> Mughlai</label>
+                            <label><input type="checkbox" name="vip-interests" value="Tandoor"> Tandoor</label>
+                            <label><input type="checkbox" name="vip-interests" value="Street Food"> Street Food</label>
+                            <label><input type="checkbox" name="vip-interests" value="Desserts"> Desserts</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> I agree to receive special offers and updates
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ratings Section -->
+    <section class="ratings" id="ratings">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="ratings-grid">
+                <div class="rating-card">
+                    <div class="rating-header">
+                        <div class="rating-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="rating-user">
+                            <h4>Sarah Johnson</h4>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rating-text">"The Hyderabadi Biryani is absolutely to die for! The flavors are so authentic and rich. Service was impeccable and the ambiance takes you right to India. Will definitely be coming back!"</p>
+                </div>
+                <div class="rating-card">
+                    <div class="rating-header">
+                        <div class="rating-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="rating-user">
+                            <h4>Michael Chen</h4>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rating-text">"As someone from India, I can say this is the most authentic South Indian food I've had outside of India. The dosas are perfectly crispy and the sambar tastes just like home."</p>
+                </div>
+                <div class="rating-card">
+                    <div class="rating-header">
+                        <div class="rating-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="rating-user">
+                            <h4>Emily Rodriguez</h4>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rating-text">"The butter chicken is heavenly! Creamy, flavorful, and the naan bread is perfect for scooping up every last bit. The staff is so friendly and helpful with recommendations."</p>
+                </div>
+            </div>
+            <div class="text-center py-2">
+                <button class="btn" id="addReviewBtn">Add Your Review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Spice Delight</h3>
+                    <p>Bringing authentic Indian flavors to your table since 2005. Our commitment to quality and tradition makes us a favorite among food lovers.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Chefs</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Broadway, New York, NY 10036</p>
+                    <p><i class="fas fa-phone"></i> (212) 555-1234</p>
+                    <p><i class="fas fa-envelope"></i> info@spicedelight.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 11am - 11pm</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Spice Delight. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> by Spice Delight Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Review Modal -->
+    <div class="modal" id="reviewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Add Your Review</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="review-name">Your Name</label>
+                    <input type="text" id="review-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-email">Email</label>
+                    <input type="email" id="review-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="rating-stars" id="starRating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating-value" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Review</label>
+                    <textarea id="review-text" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Order</h2>
+            <div id="orderSummary">
+                <!-- Order items will be added here dynamically -->
+            </div>
+            <div class="form-group">
+                <label for="delivery-address">Delivery Address (if different)</label>
+                <textarea id="delivery-address" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="order-notes">Special Instructions</label>
+                <textarea id="order-notes" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Payment Method</label>
+                <div>
+                    <label><input type="radio" name="payment-method" value="card" checked> Credit/Debit Card</label>
+                    <label><input type="radio" name="payment-method" value="cash"> Cash on Delivery</label>
+                    <label><input type="radio" name="payment-method" value="upi"> UPI/QR Code</label>
+                </div>
+            </div>
+            <div id="cardDetails" class="form-group">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-expiry">Expiry Date</label>
+                        <input type="text" id="card-expiry" class="form-control" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" class="form-control" placeholder="123">
+                    </div>
+                </div>
+            </div>
+            <div id="upiDetails" class="form-group" style="display: none;">
+                <p>Scan the QR code below to complete payment:</p>
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://spicedelight.com/pay/order123" alt="QR Code for Payment">
+                </div>
+            </div>
+            <button id="confirmOrderBtn" class="btn">Confirm Order</button>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="text-center">
+                <i class="fas fa-check-circle" style="font-size: 60px; color: var(--success-color); margin-bottom: 20px;"></i>
+                <h2>Thank You!</h2>
+                <p id="confirmationMessage">Your reservation has been confirmed.</p>
+                <button class="btn" id="closeConfirmationBtn">Close</button>
+            </div>
+        </div>
+    </div>
